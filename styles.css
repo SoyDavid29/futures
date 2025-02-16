@@ -23,7 +23,7 @@ body {
 .scroll-container {
     display: flex;
     justify-content: space-between;
-    width: 1400px;
+    width: 1350px;
     height: 400px;
 
 }
@@ -42,6 +42,8 @@ body {
 
     overflow-x: auto;
     scrollbar-width: none;
+    scroll-behavior: smooth;
+   
 }
 
 .vertical-galery {
@@ -57,14 +59,23 @@ body {
     height: 440px;
 
     margin-right: 90px;
+
     overflow-y: auto;
     scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 
 .pop {
     width: 200px;
     height: 200px;
+
+    transition: all 2s ease-in-out;
 }
+.pop:hover{
+    scale: 0.8;
+    opacity: 0.8;
+}
+
 
 .logos {
     width: 200px;
