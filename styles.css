@@ -10,74 +10,39 @@ body {
     font-weight: 600;
 }
 
-.animaciones {
-    margin-top: 2rem;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    gap: 3rem;
+.titulo{ 
+    font-size: 16px;
+    text-align: center;
 }
 
-.scroll-container {
+.animaciones{
+    margin: 0 auto;
+    padding: 15px;
     display: flex;
-    justify-content: space-between;
-    width: 1350px;
-    height: 400px;
-
-}
-
-.horizontal-galery {
-    border: solid 1px;
-
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
     gap: 20px;
-
-    width: 750px;
-    height: 240px;
-    margin-left: 90px;
-
-    overflow-x: auto;
-    scrollbar-width: none;
-    scroll-behavior: smooth;
-   
 }
 
-.vertical-galery {
-    border: solid 1px brown;
+.scroll-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    flex-direction: column;
-
-    gap: 20px;
-    width: 240px;
-    height: 440px;
-
-    margin-right: 90px;
-
-    overflow-y: auto;
-    scrollbar-width: none;
-    scroll-behavior: smooth;
 }
 
-.pop {
-    width: 200px;
-    height: 200px;
-
-    transition: all 2s ease-in-out;
-}
-.pop:hover{
-    scale: 0.8;
-    opacity: 0.8;
+.pop{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
 
+.logos{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 
-.logos {
-    width: 200px;
-    height: 200px;
+}
+
+@media(min-width:750px){
+ .animaciones{
+ }
 }
